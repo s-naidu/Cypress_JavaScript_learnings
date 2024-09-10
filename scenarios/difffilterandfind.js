@@ -10,3 +10,8 @@ const finditem=arrnum.filter((item)=>{
     return item.age>30
 })
 console.log(finditem)
+
+const finditem1=arrnum.find((item)=>{
+    return item.age>30
+})
+console.log(finditem1)

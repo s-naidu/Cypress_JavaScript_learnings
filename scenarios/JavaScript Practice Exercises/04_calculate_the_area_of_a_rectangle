@@ -1,0 +1,4 @@
+function calculaterectangle(width,height){
+    return width*height
+}
+console.log(calculaterectangle(30,10))
