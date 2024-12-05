@@ -18,7 +18,7 @@ describe('Google Translate Detect Language Test', () => {
       //
       // Step 3: Type "hello" into the text area
       cy.get('[aria-label="More source languages"]').eq(0).click();
-      cy.get('textarea[aria-label="Source text"]').type('hello ');
+      cy.get('textarea[aria-label="Source text"]').type('hello');
       cy.wait(3000)
   
       // Step 4: Wait for the language detection
@@ -29,8 +29,8 @@ describe('Google Translate Detect Language Test', () => {
         .invoke('text')
         .then((detectedLanguage) => {
           expect(detectedLanguage.trim()).contains('English'); // Change "English" to match the expected detected language
-          cy.log(`Detected language: ${detectedLanguage}`);
-          cy.log(`Available languages: ${detectedLanguages.join(', ')}`);
+         // cy.log(`Detected language: ${detectedLanguage}`);
+         // cy.log(`Available languages: ${detectedLanguages.join(', ')}`);
         });
     });
   });
