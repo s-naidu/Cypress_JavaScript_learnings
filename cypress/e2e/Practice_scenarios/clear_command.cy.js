@@ -1,4 +1,3 @@
-///<reference types='Cypress'/>
 
 describe('Basic test suite', () => {
     it('opens the link in same tab by removing the target attribute', () => {

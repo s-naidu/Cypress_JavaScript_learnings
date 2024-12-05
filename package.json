@@ -12,10 +12,12 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.13.0",
+    "cypress-iframe": "^1.0.1",
     "cypress-parallel": "^0.14.0",
     "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.8.2"
   }
 }

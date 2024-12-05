@@ -11,7 +11,7 @@ describe('handling tables', () => {
             // failing the test
             return false
         })
-        cy.get('tbody tr td:nth-child(2)').each(($el, index, $list) => {
+        cy.get('tbody tr td:nth-child(2)').each(($el, index) => {
             const countrytext = $el.text()
 
             if (countrytext.includes('Central African Republic')) {

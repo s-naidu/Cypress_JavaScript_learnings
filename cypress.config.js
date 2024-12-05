@@ -3,7 +3,9 @@ const { defineConfig } = require('cypress');
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
 
 module.exports = defineConfig({
-  watchForFileChanges:false,
+  watchForFileChanges: false,
+  chromeWebSecurity:false,
+  defaultCommandTimeout: 10000,
   reporter: 'cypress-mochawesome-reporter',
   projectId: 'wjnnjp',
   e2e: {

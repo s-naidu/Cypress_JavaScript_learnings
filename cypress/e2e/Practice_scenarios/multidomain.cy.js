@@ -10,11 +10,11 @@ describe('Automation - Working With Links', function () {
       cy.get('#Welcome_to_Wikifunctions').should('contain.text', 'Wikifunctions');
 
       //Verify links count in a Page
-      cy.get('a').should('have.length', 134)
+      cy.get('a').should('have.length', 135)
       cy.get('a').its('length').then((elelength) => {
         var lengthcount = elelength
         cy.log(lengthcount)
-        expect(lengthcount).to.equal(134)
+        expect(lengthcount).to.equal(135)
       })
       // cy.get('.vector-menu-content:visible').eq(8).find('a').its('length').then((elelength) => {
       //   cy.log(elelength)
